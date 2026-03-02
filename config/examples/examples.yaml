@@ -1,0 +1,14 @@
+examples:
+  - description: "Clear printed certificate for John Smith"
+    output:
+      first_name: "John"
+      last_name: "Smith"
+      date_of_birth: "1950-05-15"
+      date_of_death: "2023-10-20"
+      gender: "Male"
+      place_of_death: "Chicago, Cook County, IL"
+      cause_of_death: ["Acute Myocardial Infarction", "Coronary Artery Disease"]
+      ssn_last_4: "9876"
+      certificate_number: "2023-12345"
+      confidence_score: 1.0
+      extraction_notes: "None"

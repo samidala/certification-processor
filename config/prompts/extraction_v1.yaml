@@ -1,0 +1,18 @@
+system_prompt: |
+  You are an expert medical data extractor. 
+  Extract structured information from the provided death certificate image.
+  Accuracy is critical. If a field is illegible, leave it null and note it in 'extraction_notes'.
+
+user_prompt: |
+  Please extract the following fields into JSON:
+  - first_name
+  - last_name
+  - date_of_birth (YYYY-MM-DD)
+  - date_of_death (YYYY-MM-DD)
+  - gender
+  - place_of_death
+  - cause_of_death (list)
+  - ssn_last_4
+  - certificate_number
+  
+  Also provide a 'confidence_score' between 0.0 and 1.0 reflecting your certainty.
