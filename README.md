@@ -20,7 +20,7 @@ The system follows a modular pipeline designed for high accuracy and scalability
 ### Installation
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone git@github.com:samidala/certification-processor.git
 cd death-certificate-extractor
 
 # Set up virtual environment
