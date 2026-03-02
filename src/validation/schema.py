@@ -8,10 +8,10 @@ class DeathCertificateSchema(BaseModel):
     last_name: str = Field(..., description="Legal last name of the deceased")
     date_of_birth: Optional[date] = Field(None, description="Date of birth in YYYY-MM-DD format")
     date_of_death: date = Field(..., description="Date of death in YYYY-MM-DD format")
-    gender: str = Field(..., description="Gender of the deceased")
+    gender: Optional[str] = Field(None, description="Gender of the deceased")
     
     # Place and Cause
-    place_of_death: str = Field(..., description="City, County, or State where death occurred")
+    place_of_death: Optional[str] = Field(None, description="City, County, or State where death occurred")
     cause_of_death: List[str] = Field(default_factory=list, description="List of causes contributing to death")
     
     # Identification

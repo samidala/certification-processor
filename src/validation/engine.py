@@ -21,6 +21,10 @@ class ValidationEngine:
             # Penalty for missing optional but important fields
             if not validated_data.ssn_last_4:
                 base_confidence *= 0.95
+            if not validated_data.gender:
+                base_confidence *= 0.98
+            if not validated_data.place_of_death:
+                base_confidence *= 0.90 # High penalty for missing place
             
             is_valid = base_confidence >= config.CONFIDENCE_THRESHOLD
             
